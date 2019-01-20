@@ -11,7 +11,7 @@ Every file contains self-explaining comments of the beahavior.
 - L298N Dual H Bridge - This is where you have to connect motors, RPi and batteries.
 - WiFi Dongle for RPi.
 - Jumpers
-- Broadboard
+- Breadboard
 
 
 # Steps to mount
