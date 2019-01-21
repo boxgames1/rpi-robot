@@ -17,3 +17,15 @@ Every file contains self-explaining comments of the beahavior.
 # Steps to mount
 
 -ToDo-
+
+# Files
+
+## Robot 1
+It moves forward the right wheels
+
+![Robot1 script](files/robot1.gif?raw=true "Robot 1")
+
+## Robot 2
+It moves forward all wheels and after 1 second, moves them backwards
+
+![Robot1 script](files/robot2.gif?raw=true "Robot 1")
