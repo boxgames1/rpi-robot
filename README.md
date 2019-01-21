@@ -21,7 +21,7 @@ Every file contains self-explaining comments of the beahavior.
 # Files
 
 ## Robot 1
-It moves forward the right wheels
+It moves backwards the left wheels
 
 ![Robot1 script](files/robot1.gif?raw=true "Robot 1")
 
