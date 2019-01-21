@@ -67,18 +67,30 @@ def pivot_right(tf):
     time.sleep(tf)
     gpio.cleanup()
 
-
+# It receives the key event, initializes, sets the sleep time and depending on the key, it acts
 def key_input(event):
     init()
     print 'Key: ', event.char
     key_press = event.char
-    sleep_time = 0.030
+    sleep_time = 0.050
 
     if key_press.lower() == 'w':
-        forward(sleept_time)
+        forward(sleep_time)
+    elif key_press.lower() == 's':
+        reverse(sleep_time)
+    elif key_press.lower() == 'd':
+        turn_right(sleep_time)
+    elif key_press.lower() == 'a':
+        turn_left(sleep_time)
+    elif key_press.lower() == 'q':
+        pivot_left(sleep_time)
+    elif key_press.lower() == 'e':
+        pivot_right(sleep_time)
+    else:
+        gpio.cleanup()
 
 
-
+# This is the main function that opens tk in a GUI looking for a key to be pressed and sent to key_input function
 command = tk.Tk()
 command.bind('<KeyPress>',key_input)
 command.mainloop()
